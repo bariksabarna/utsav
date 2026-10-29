@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#ebdcff","secondary":"#835500","primary-container":"#4a2c82","on-error-container":"#93000a","on-primary":"#ffffff","on-tertiary-container":"#d4a162","surface-container-low":"#f9f1ff","on-tertiary-fixed-variant":"#633f07","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#633f00","secondary-container":"#feae2c","primary":"#33116b","inverse-on-surface":"#f7edff","secondary-fixed":"#ffddb4","on-surface":"#201731","tertiary-fixed":"#ffddb7","surface-variant":"#ebdcff","surface-bright":"#fef7ff","primary-fixed":"#ebddff","surface-tint":"#6b4ea5","on-error":"#ffffff","inverse-primary":"#d3bbff","surface-container":"#f4eaff","tertiary":"#3c2300","on-surface-variant":"#494551","inverse-surface":"#352c47","on-secondary-container":"#6b4500","error-container":"#ffdad6","outline":"#7b7582","surface":"#fef7ff","surface-dim":"#e2d4f8","background":"#fef7ff","on-background":"#201731","tertiary-container":"#5a3700","on-secondary-fixed":"#291800","on-primary-fixed-variant":"#53358b","on-secondary":"#ffffff","on-tertiary-fixed":"#2a1700","surface-container-high":"#f0e3ff","on-primary-fixed":"#250059","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb955","outline-variant":"#cbc4d2","tertiary-fixed-dim":"#f3bd7b","primary-fixed-dim":"#d3bbff","on-primary-container":"#b99af7","error":"#ba1a1a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-2xl":"3rem","margin":"2rem","space-lg":"1.5rem","space-xs":"0.5rem","gutter":"1.5rem","space-sm":"0.75rem","space-md":"1rem","space-2xs":"0.25rem"},fontFamily:{"body-base":["Plus Jakarta Sans"],"caption":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-base-medium":["Plus Jakarta Sans"],"body-lead":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"caption":["14px",{"lineHeight":"21px","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"38.4px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"28.8px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38.4px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["44px",{"lineHeight":"52.8px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-lead":["18px",{"lineHeight":"27px","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"31.2px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-base text-body-base text-on-surface antialiased"><a class="sr-only focus:not-sr-only focus:fixed focus:top-space-xs focus:left-space-xs focus:z-[100] focus:px-space-md focus:py-space-xs focus:bg-primary focus:text-on-primary focus:font-body-base-medium focus:text-body-base-medium focus:rounded-lg focus:shadow-lg focus:outline-none" href="#main-content">Skip to main content</a><header class="fixed top-0 left-0 right-0 h-16 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,22,48,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Utsav Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3878K2BgHrAzj7i-2vFwBL_pdFI0eKk2AYrRxw3mP9rnCS24fzU01oD4AGN7BXBKo1MLHhL266im38HdSiXKw6VHlEBrttxkkVfQevcMveEeisJDWyiSFhYvbfD9LGzhpzDh_gU0hdZRrX1P3u-K8XyOfOX9X5S-coP36kVs-RelIN5iOh6dEdFQ2-6Na-xqFSJjP09wnSr_e4zQf9XeIH1QmnA1AmsQm0xWxaFTE4jjOq0GkGTfEcrQ"/><div class="flex items-center gap-space-2xs"><span class="font-headline-md text-headline-md tracking-tight text-primary">Utsav</span><span class="inline-flex items-center px-space-xs py-space-2xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">AI</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center bg-surface-container-low rounded-xl p-space-2xs"><button class="min-h-[44px] px-space-sm rounded-lg font-caption text-caption text-on-surface bg-surface-container-lowest shadow-[0_1px_2px_rgba(31,22,48,0.04)] transition-colors" type="button">EN</button><button class="min-h-[44px] px-space-sm rounded-lg font-caption text-caption text-on-surface-variant hover:text-on-surface transition-colors" type="button">हिन्दी</button><button class="min-h-[44px] px-space-sm rounded-lg font-caption text-caption text-on-surface-variant hover:text-on-surface transition-colors" type="button">বাংলা</button></div><button aria-label="Toggle color mode" class="w-11 h-11 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button aria-label="Help &amp; Knowledge Base" class="w-11 h-11 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-[240px] bg-surface-container-low flex flex-col justify-between py-space-md z-30 shadow-[0_1px_8px_rgba(31,22,48,0.04)]"><div class="flex-1 overflow-y-auto px-space-xs"><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-body-base-medium text-body-base-medium rounded-xl shadow-[0_1px_2px_rgba(31,22,48,0.04)]"><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Home</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="plan-wizard" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>Plan Wizard</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="budget" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Budget</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="timeline" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Timeline</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vendors" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Vendors</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ideas" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Ideas</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="assistant" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span>Assistant</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="px-space-sm pt-space-xs"><div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">cloud_done</span><span class="font-label-sm text-label-sm text-on-surface-variant">Local Cache Active</span></div></div></aside><div class="pl-[240px] flex flex-col min-h-screen"><main class="flex-1 w-full pt-16 px-space-xl pb-space-2xl bg-surface focus:outline-none" id="main-content"><div class="flex flex-col w-full">
+<!-- Dynamic Top Banner / Atmospheric Sparkle -->
+<div class="relative w-full rounded-2xl bg-gradient-to-r from-surface-container-high via-surface-container-low to-surface-variant p-space-lg mb-space-xl overflow-hidden shadow-sm">
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-64 h-64 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-2xs px-space-xs py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm mb-space-xs shadow-sm">
+<svg class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Stage 2 of 2: Refining Celebration Blueprint
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Financial Scope &amp; Curated Vibe</h1>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Calibrating vendors, culinary heritage, and spatial requirements for Ananya &amp; Debashis’s Wedding.</p>
+</div>
+<!-- Quick Step Tracker Pills -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md p-1.5 rounded-xl shadow-sm">
+<button class="wizard-tab-btn flex items-center gap-space-2xs px-space-sm min-h-[44px] rounded-lg bg-primary-container text-on-primary font-caption text-caption transition-all" id="tab-btn-3" onclick="switchWizardStage(3)">
+<span class="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center font-label-sm text-label-sm">3</span>
+<span>Budget &amp; Place</span>
+</button>
+<button class="wizard-tab-btn flex items-center gap-space-2xs px-space-sm min-h-[44px] rounded-lg text-on-surface-variant hover:text-on-surface font-caption text-caption transition-all" id="tab-btn-4" onclick="switchWizardStage(4)">
+<span class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm">4</span>
+<span>Preferences</span>
+</button>
+<button class="wizard-tab-btn flex items-center gap-space-2xs px-space-sm min-h-[44px] rounded-lg text-on-surface-variant hover:text-on-surface font-caption text-caption transition-all" id="tab-btn-5" onclick="switchWizardStage(5)">
+<span class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm">5</span>
+<span>Final Review</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Multi-Stage Canvas -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Dynamic Active Form Steps (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-xl">
+<!-- ================= STEP 3 CARD ================= -->
+<section class="wizard-step-section bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm transition-all duration-300" id="step-3-container">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-10 h-10 rounded-xl bg-primary text-on-primary font-headline-md text-headline-md">3</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Budget &amp; Place</h2>
+<p class="font-caption text-caption text-on-surface-variant">Define spending boundary and spatial parameters</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            Est. 2 mins
+          </span>
+</div>
+<div class="space-y-space-lg">
+<!-- Total Budget & Currency -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="sm:col-span-2">
+<label class="block font-caption text-caption text-on-surface font-semibold mb-1.5" for="budget-input">
+                Total Allocated Budget
+              </label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-headline-md text-headline-md text-on-surface-variant pointer-events-none select-none">₹</span>
+<input class="w-full min-h-[44px] h-12 pl-10 pr-space-md rounded-xl bg-surface text-on-surface font-body-base-medium text-body-base-medium shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-container" id="budget-input" oninput="updateBudgetWord(this.value)" type="text" value="15,00,000"/>
+</div>
+<p class="mt-2 font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1" id="budget-in-words">
+<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>₹15,00,000 — fifteen lakh INR</span>
+</p>
+</div>
+<div>
+<label class="block font-caption text-caption text-on-surface font-semibold mb-1.5" for="currency-selector">
+                Currency
+              </label>
+<div class="relative">
+<select class="w-full min-h-[44px] h-12 px-space-md rounded-xl bg-surface text-on-surface font-body-base-medium text-body-base-medium appearance-none focus:outline-none focus:ring-2 focus:ring-primary-container" id="currency-selector">
+<option selected="" value="INR">INR (₹) Indian Rupee</option>
+<option value="USD">USD ($) US Dollar</option>
+<option value="GBP">GBP (£) British Pound</option>
+<option value="AED">AED (د.إ) UAE Dirham</option>
+</select>
+<div class="pointer-events-none absolute right-3 top-3.5 text-on-surface-variant">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+</div>
+<span class="block mt-2 font-label-sm text-label-sm text-on-surface-variant">Adheres to Indian grouping (Lakh/Crore)</span>
+</div>
+</div>
+<!-- City Tier Segmented Control -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-caption text-caption text-on-surface font-semibold">City Classification</label>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline focus:outline-none min-h-[44px]" onclick="toggleInfoNote()" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>How do we use this?</span>
+</button>
+</div>
+<div class="hidden mb-space-sm p-space-md rounded-xl bg-surface-container-low text-on-surface-variant font-caption text-caption" id="city-info-note">
+              Vendor rates vary by up to 45% between Tier 1 metros (Mumbai, NCR, Kolkata) and Tier 2/3 cities. We automatically adjust estimated cost allocations for banquet halls, decorators, and photo crews based on your geographic market tier.
+            </div>
+<div class="grid grid-cols-3 gap-space-2xs p-1.5 rounded-xl bg-surface-container-low">
+<button class="tier-pill min-h-[44px] rounded-lg bg-surface-container-lowest text-primary font-body-base-medium text-body-base-medium shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="selectTier(this)" type="button">
+<svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Metro (Tier 1)</span>
+</button>
+<button class="tier-pill min-h-[44px] rounded-lg text-on-surface-variant hover:text-on-surface font-body-base-medium text-body-base-medium transition-all flex items-center justify-center gap-1.5" onclick="selectTier(this)" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.75a1.125 1.125 0 00-1.125-1.125H5.625A1.125 1.125 0 004.5 3.75V21h3.75z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Large City (Tier 2)</span>
+</button>
+<button class="tier-pill min-h-[44px] rounded-lg text-on-surface-variant hover:text-on-surface font-body-base-medium text-body-base-medium transition-all flex items-center justify-center gap-1.5" onclick="selectTier(this)" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 21v-8.25M15.75 21v-5.25M8.25 21v-3.75M3.75 21V9.75l8.25-6 8.25 6V21H3.75z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Town / Rural</span>
+</button>
+</div>
+</div>
+<!-- Venue Type Selection Cards -->
+<div>
+<label class="block font-caption text-caption text-on-surface font-semibold mb-2">Primary Venue Profile</label>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-sm" id="venue-selection-group">
+<!-- Indoor Hall (Selected) -->
+<div class="venue-card cursor-pointer rounded-xl p-space-md bg-primary-container text-on-primary shadow-sm flex flex-col justify-between min-h-[110px] transition-all" onclick="selectVenue(this, 'Indoor Banquet Hall')">
+<div class="flex items-center justify-between">
+<svg class="w-6 h-6 text-on-primary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6h1.5m-1.5 3h1.5m-1.5 3h1.5M9 21v-3.75a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5V21" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</span>
+</div>
+<div>
+<p class="font-body-base-medium text-body-base-medium">Indoor Hall</p>
+<span class="font-label-sm text-label-sm text-on-primary-container">AC / Weatherproof</span>
+</div>
+</div>
+<!-- Outdoor Lawn -->
+<div class="venue-card cursor-pointer rounded-xl p-space-md bg-surface text-on-surface hover:bg-surface-container transition-all flex flex-col justify-between min-h-[110px]" onclick="selectVenue(this, 'Outdoor Lawn')">
+<div class="flex items-center justify-between">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center"></span>
+</div>
+<div>
+<p class="font-body-base-medium text-body-base-medium">Outdoor Lawn</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open sky &amp; Mandap</span>
+</div>
+</div>
+<!-- Home -->
+<div class="venue-card cursor-pointer rounded-xl p-space-md bg-surface text-on-surface hover:bg-surface-container transition-all flex flex-col justify-between min-h-[110px]" onclick="selectVenue(this, 'Ancestral / Home')">
+<div class="flex items-center justify-between">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center"></span>
+</div>
+<div>
+<p class="font-body-base-medium text-body-base-medium">Home</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Intimate ritual</span>
+</div>
+</div>
+<!-- Community Ground -->
+<div class="venue-card cursor-pointer rounded-xl p-space-md bg-surface text-on-surface hover:bg-surface-container transition-all flex flex-col justify-between min-h-[110px]" onclick="selectVenue(this, 'Community Ground')">
+<div class="flex items-center justify-between">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.999-3.198A5.97 5.97 0 016 18.72m6-12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zm9 0a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center"></span>
+</div>
+<div>
+<p class="font-body-base-medium text-body-base-medium">Community Ground</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Samaj / Dharamshala</span>
+</div>
+</div>
+<!-- Destination -->
+<div class="venue-card cursor-pointer rounded-xl p-space-md bg-surface text-on-surface hover:bg-surface-container transition-all flex flex-col justify-between min-h-[110px]" onclick="selectVenue(this, 'Destination Resort')">
+<div class="flex items-center justify-between">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center"></span>
+</div>
+<div>
+<p class="font-body-base-medium text-body-base-medium">Destination</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resort / Heritage Haveli</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= STEP 4 CARD ================= -->
+<section class="wizard-step-section bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm transition-all duration-300" id="step-4-container">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-10 h-10 rounded-xl bg-primary text-on-primary font-headline-md text-headline-md">4</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Preferences &amp; Priorities</h2>
+<p class="font-caption text-caption text-on-surface-variant">Culinary rules, aesthetic atmosphere, and ranked focus areas</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+            Customizable anytime
+          </span>
+</div>
+<div class="space-y-space-lg">
+<!-- Dietary Requirements Chips -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-caption text-caption text-on-surface font-semibold">Dietary Sensitivity &amp; Tradition</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Select all that apply</span>
+</div>
+<div class="flex flex-wrap gap-2" id="dietary-chips">
+<!-- Vegetarian (selected) -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-primary-container text-on-primary font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Pure Vegetarian</span>
+</button>
+<!-- Jain (selected) -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-primary-container text-on-primary font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Jain Available</span>
+</button>
+<!-- Vegan -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Vegan</span>
+</button>
+<!-- Halal -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Halal</span>
+</button>
+<!-- No Beef -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>No Beef</span>
+</button>
+<!-- No Pork -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>No Pork</span>
+</button>
+<!-- Gluten-free -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Gluten-free</span>
+</button>
+<!-- Nut-free -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Nut-free</span>
+</button>
+</div>
+</div>
+<!-- Celebration Vibe Chips -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-caption text-caption text-on-surface font-semibold">Atmospheric Vibe &amp; Aesthetic</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guides AI design sparks</span>
+</div>
+<div class="flex flex-wrap gap-2" id="vibe-chips">
+<!-- Traditional (Selected) -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-primary-container text-on-primary font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Traditional Bengali</span>
+</button>
+<!-- Royal (Selected) -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-primary-container text-on-primary font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Royal &amp; Majestic</span>
+</button>
+<!-- Modern -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Modern Minimalist</span>
+</button>
+<!-- Rustic -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Rustic Earthy</span>
+</button>
+<!-- Minimal -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Warm Minimal</span>
+</button>
+<!-- Fun -->
+<button class="chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2" onclick="toggleChip(this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>High Energy &amp; Fun</span>
+</button>
+</div>
+</div>
+<!-- Top 3 Priorities Ranked Picker -->
+<div class="rounded-xl bg-surface p-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<label class="font-caption text-caption text-on-surface font-semibold block">Top 3 Priorities</label>
+<p class="font-label-sm text-label-sm text-on-surface-variant">We allocate discretionary budget toward your #1 and #2 slots first</p>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+                Ranked Allocation
+              </span>
+</div>
+<!-- Ranked List & Pool -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Ranked Container -->
+<div class="space-y-2" id="ranked-list-container">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Top 3 Active Ranks</p>
+<!-- Rank 1 -->
+<div class="ranked-row flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm" data-id="catering">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-caption text-caption font-bold">1</span>
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Catering &amp; Feast</p>
+<span class="font-label-sm text-label-sm text-secondary">35% estimated weight</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="movePriority(this, 'down')" title="Move Down" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+</div>
+</div>
+<!-- Rank 2 -->
+<div class="ranked-row flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm" data-id="photography">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-caption text-caption font-bold">2</span>
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Photography &amp; Film</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">20% estimated weight</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="movePriority(this, 'up')" title="Move Up" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="movePriority(this, 'down')" title="Move Down" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+</div>
+</div>
+<!-- Rank 3 -->
+<div class="ranked-row flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-sm" data-id="decor">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-caption text-caption font-bold">3</span>
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Decor &amp; Florals</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18% estimated weight</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="movePriority(this, 'up')" title="Move Up" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Unranked Pool -->
+<div class="space-y-2">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Other Key Segments</p>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between opacity-85">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-caption text-caption text-on-surface">Music &amp; Entertainment</span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm min-h-[44px] flex items-center" onclick="swapWithThird('Music &amp; Entertainment')" type="button">Make Top 3</button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between opacity-85">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-caption text-caption text-on-surface">Venue Aesthetics</span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm min-h-[44px] flex items-center" onclick="swapWithThird('Venue Aesthetics')" type="button">Make Top 3</button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between opacity-85">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-caption text-caption text-on-surface">Traditional Attire &amp; Styling</span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm min-h-[44px] flex items-center" onclick="swapWithThird('Attire &amp; Styling')" type="button">Make Top 3</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toggles with Contextual Text States -->
+<div>
+<label class="block font-caption text-caption text-on-surface font-semibold mb-space-xs">Celebration Parameters</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Alcohol Toggle (Off) -->
+<div class="p-space-md rounded-xl bg-surface flex items-center justify-between">
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Serving Alcohol</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1" id="status-alcohol">
+<svg class="w-3.5 h-3.5 text-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    Off • Dry celebration / soft beverages
+                  </span>
+</div>
+<button aria-checked="false" class="w-12 h-7 rounded-full bg-surface-container-highest p-1 transition-colors relative min-h-[44px] flex items-center" onclick="toggleParam(this, 'status-alcohol', 'Off • Dry celebration / soft beverages', 'On • Bar &amp; license planned')" role="switch" type="button">
+<div class="toggle-dot w-5 h-5 rounded-full bg-white shadow-md transform transition-transform"></div>
+</button>
+</div>
+<!-- Elderly Guests (On) -->
+<div class="p-space-md rounded-xl bg-surface flex items-center justify-between">
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Elderly Guests Attending</p>
+<span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1" id="status-elderly">
+<svg class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    On • Step-free entry &amp; cushioned seating
+                  </span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-1 transition-colors relative min-h-[44px] flex items-center" onclick="toggleParam(this, 'status-elderly', 'Off • Standard accessibility', 'On • Step-free entry &amp; cushioned seating')" role="switch" type="button">
+<div class="toggle-dot w-5 h-5 rounded-full bg-white shadow-md transform translate-x-5 transition-transform"></div>
+</button>
+</div>
+<!-- Live Music / DJ (On) -->
+<div class="p-space-md rounded-xl bg-surface flex items-center justify-between">
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Live Music / DJ</p>
+<span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1" id="status-music">
+<svg class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    On • Sound permit &amp; Shehnai/DJ slots
+                  </span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-1 transition-colors relative min-h-[44px] flex items-center" onclick="toggleParam(this, 'status-music', 'Off • Background instrumental only', 'On • Sound permit &amp; Shehnai/DJ slots')" role="switch" type="button">
+<div class="toggle-dot w-5 h-5 rounded-full bg-white shadow-md transform translate-x-5 transition-transform"></div>
+</button>
+</div>
+<!-- Multi-day event (On - 3 days) -->
+<div class="p-space-md rounded-xl bg-surface flex items-center justify-between">
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Multi-day Event</p>
+<span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1" id="status-multiday">
+<svg class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    On • 3 Days (Gaye Holud, Biye, Bou Bhaat)
+                  </span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-1 transition-colors relative min-h-[44px] flex items-center" onclick="toggleParam(this, 'status-multiday', 'Off • Single evening event', 'On • 3 Days (Gaye Holud, Biye, Bou Bhaat)')" role="switch" type="button">
+<div class="toggle-dot w-5 h-5 rounded-full bg-white shadow-md transform translate-x-5 transition-transform"></div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= STEP 5: REVIEW SECTION ================= -->
+<section class="wizard-step-section bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm transition-all duration-300" id="step-5-container">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-10 h-10 rounded-xl bg-primary text-on-primary font-headline-md text-headline-md">5</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Review &amp; Generate Blueprint</h2>
+<p class="font-caption text-caption text-on-surface-variant">Review configured parameters before generating your customized timeline &amp; budget ledger</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-space-xs py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+            Ready to finalize
+          </span>
+</div>
+<!-- Two Column Read-Only Summary Card -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md p-space-lg rounded-xl bg-surface-container-low mb-space-lg">
+<!-- Column 1: Core Essentials -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Event Identity</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1 min-h-[44px]" onclick="editSection('Event Details')" type="button">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                Edit
+              </button>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Celebration Type</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">Bengali Hindu Wedding</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Total Budget</span>
+<span class="font-body-base-medium text-body-base-medium text-secondary font-bold">₹15,00,000 (₹15 Lakh)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Expected Guest Count</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">250 Guests</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">City / Geography</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">Kolkata (Metro Tier 1)</span>
+</div>
+</div>
+<!-- Column 2: Logistics & Style -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Logistics &amp; Style</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1 min-h-[44px]" onclick="editSection('Logistics')" type="button">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                Edit
+              </button>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Selected Venue</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface" id="review-venue-type">Indoor Banquet Hall</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Key Priorities</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">1. Catering • 2. Photo • 3. Decor</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Dietary Mandate</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">Pure Veg &amp; Jain Friendly</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Schedule Span</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">3-Day Ceremonial Sequence</span>
+</div>
+</div>
+</div>
+<!-- Privacy & Local Processing Notice -->
+<div class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-high/60 mb-space-lg">
+<svg class="w-5 h-5 text-secondary shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div class="font-caption text-caption text-on-surface-variant">
+<span class="font-semibold text-on-surface">Privacy First Architecture:</span>
+            Everything is calculated locally on your device. AI ideas and recommendation sparks are purely optional and do not send guest information to remote clouds.
+          </div>
+</div>
+<!-- Actions Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md">
+<button class="w-full sm:w-auto px-space-lg min-h-[44px] rounded-xl text-primary font-body-base-medium text-body-base-medium hover:bg-surface-container transition-colors flex items-center justify-center gap-2" onclick="switchWizardStage(4)" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Back to Preferences</span>
+</button>
+<button class="w-full sm:w-auto min-h-[48px] px-space-xl rounded-xl bg-primary text-on-primary font-body-base-medium text-body-base-medium shadow-md hover:bg-primary-container focus:ring-4 focus:ring-primary/20 transition-all flex items-center justify-center gap-space-xs group" id="create-plan-btn" onclick="finalizePlanCreation()" type="button">
+<span>Create my plan</span>
+<svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+</div>
+</section>
+</div>
+<!-- RIGHT PANEL: Dynamic Live Insight & Breakdown (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg sticky top-20">
+<!-- Visualizer Card: Allocation Projection -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Budget Allocation</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">100% Projected</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-space-md">Real-time estimate based on Bengali Metro standards</p>
+<!-- Donut & Breakdown Visualization -->
+<div class="flex items-center justify-center py-space-sm">
+<div class="relative w-44 h-44">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Ring -->
+<circle class="text-surface-container" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-width="4.5"></circle>
+<!-- Catering (35%) -> stroke-dasharray 30.7, 88 -->
+<circle class="text-primary-container" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="30.8 88" stroke-dashoffset="0" stroke-width="4.5"></circle>
+<!-- Photography (20%) -> 17.6 -->
+<circle class="text-secondary" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="17.6 88" stroke-dashoffset="-30.8" stroke-width="4.5"></circle>
+<!-- Decor (18%) -> 15.8 -->
+<circle class="text-secondary-container" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="15.8 88" stroke-dashoffset="-48.4" stroke-width="4.5"></circle>
+<!-- Remainder/Venue/Misc (27%) -> 23.8 -->
+<circle class="text-primary-fixed-dim" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="23.8 88" stroke-dashoffset="-64.2" stroke-width="4.5"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Cap</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹15L</span>
+<span class="font-label-sm text-label-sm text-secondary">250 Pax</span>
+</div>
+</div>
+</div>
+<!-- Legend -->
+<div class="space-y-space-xs mt-space-sm pt-space-sm border-t border-surface-container">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span>Catering &amp; Sweets</span>
+</span>
+<span class="font-semibold text-on-surface">₹5,25,000 (35%)</span>
+</div>
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span>Photography &amp; Cinematic</span>
+</span>
+<span class="font-semibold text-on-surface">₹3,00,000 (20%)</span>
+</div>
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span>Decor &amp; Floral Set</span>
+</span>
+<span class="font-semibold text-on-surface">₹2,70,000 (18%)</span>
+</div>
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-fixed-dim"></span>
+<span>Venue, Logistics &amp; Buffer</span>
+</span>
+<span class="font-semibold text-on-surface">₹4,05,000 (27%)</span>
+</div>
+</div>
+</div>
+<!-- Inspiration & Tradition Insight -->
+<div class="rounded-2xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="flex items-center gap-2 text-primary font-caption text-caption font-bold mb-space-xs">
+<svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.493 1.508 1.333 1.508 2.316V18" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Utsav Heritage Insight
+        </div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+          For a traditional Bengali wedding with an indoor banquet setup, reserving 35% for authentic multi-course feasts (including traditional Sandesh, Mishti Doi, and Kachori platters) ensures timeless hospitality without budget creep.
+        </p>
+<!-- Visual Cultural Accent Mini Card -->
+<div class="mt-space-md rounded-xl overflow-hidden relative group">
+<img class="w-full h-32 object-cover transition-transform group-hover:scale-105 duration-300" data-alt="Traditional Bengali wedding mandap with marigold and jasmine garlands, brass lamps, and elegant ceremonial arrangement with warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeMrmQMmWs4dNzOrMRQ1__zYIYXqTRsmkc4xfXJQS1cK0x61ze7UBPLGI0OI2m4_hl1PU6p6gGEi3roEivMBUeIaoDbSDoeX-RQtCCI01zU8SBWfUGWO1YKCxnKq904z1itnGcDd23O7Oy7NkOt9QWFXMCsrxoTV2fNFwELgDmVqexUFDqB99fhcWjRdcg9FTS33f_krYi0NT_tlZnlPMFFhzQePS0qkzlRmut_K9K9HB5iEf4RahtOg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary font-medium">Inspiration: Kolkata Royal Pavilion Motif</span>
+</div>
+</div>
+</div>
+<!-- Need Guidance Floating Prompt -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v5.998z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div>
+<p class="font-body-base-medium text-body-base-medium text-on-surface">Have custom rites?</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Ask Utsav AI in Step 5</p>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline min-h-[44px] flex items-center" onclick="alert('Utsav Assistant ready to customize ceremonial pacing after plan creation.')" type="button">
+          Learn More
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 hidden z-50 bg-primary text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-xs font-caption text-caption transition-all" id="toast-msg">
+<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span id="toast-text">Preferences recorded</span>
+</div>
+</div>
+<script>
+  // Dynamic Tab Switching
+  function switchWizardStage(stageNum) {
+    const tabs = [3, 4, 5];
+    tabs.forEach(num => {
+      const btn = document.getElementById(`tab-btn-${num}`);
+      const section = document.getElementById(`step-${num}-container`);
+      
+      if (num === stageNum) {
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('text-on-surface-variant');
+        btn.querySelector('span:first-child').className = 'w-5 h-5 rounded-full bg-white/20 flex items-center justify-center font-label-sm text-label-sm';
+        
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        section.classList.add('ring-2', 'ring-primary-container');
+        setTimeout(() => section.classList.remove('ring-2', 'ring-primary-container'), 1200);
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('text-on-surface-variant');
+        btn.querySelector('span:first-child').className = 'w-5 h-5 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm';
+      }
+    });
+  }
+
+  // Budget lakh text converter
+  function updateBudgetWord(val) {
+    const num = val.replace(/[^0-9]/g, '');
+    const preview = document.getElementById('budget-in-words');
+    if (!num) {
+      preview.innerHTML = `<span>Please enter a valid amount</span>`;
+      return;
+    }
+    const n = parseInt(num, 10);
+    let lakhStr = '';
+    if (n >= 10000000) {
+      lakhStr = (n / 10000000).toFixed(2) + ' Crore';
+    } else if (n >= 100000) {
+      lakhStr = (n / 100000).toFixed(1) + ' Lakh';
+    } else {
+      lakhStr = n.toLocaleString('en-IN');
+    }
+    preview.innerHTML = `
+      <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span>₹${parseInt(num).toLocaleString('en-IN')} — ${lakhStr} INR</span>
+    `;
+  }
+
+  // City Tier toggle info note
+  function toggleInfoNote() {
+    const note = document.getElementById('city-info-note');
+    note.classList.toggle('hidden');
+  }
+
+  // City Tier Pill selection
+  function selectTier(btn) {
+    const group = btn.parentElement.querySelectorAll('.tier-pill');
+    group.forEach(el => {
+      el.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      el.classList.add('text-on-surface-variant');
+      const icon = el.querySelector('svg');
+      if (icon) icon.classList.remove('text-primary');
+    });
+    btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    btn.classList.remove('text-on-surface-variant');
+    const activeIcon = btn.querySelector('svg');
+    if (activeIcon) activeIcon.classList.add('text-primary');
+  }
+
+  // Venue Selection
+  function selectVenue(card, name) {
+    const all = document.querySelectorAll('.venue-card');
+    all.forEach(c => {
+      c.className = 'venue-card cursor-pointer rounded-xl p-space-md bg-surface text-on-surface hover:bg-surface-container transition-all flex flex-col justify-between min-h-[110px]';
+      const iconWrap = c.querySelector('div > span');
+      iconWrap.className = 'w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center';
+      iconWrap.innerHTML = '';
+      const svgIcon = c.querySelector('div > svg');
+      if (svgIcon) svgIcon.className = 'w-6 h-6 text-secondary';
+    });
+    
+    card.className = 'venue-card cursor-pointer rounded-xl p-space-md bg-primary-container text-on-primary shadow-sm flex flex-col justify-between min-h-[110px] transition-all';
+    const activeWrap = card.querySelector('div > span');
+    activeWrap.className = 'w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container';
+    activeWrap.innerHTML = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>';
+    const activeSvg = card.querySelector('div > svg');
+    if (activeSvg) activeSvg.className = 'w-6 h-6 text-on-primary';
+
+    document.getElementById('review-venue-type').innerText = name;
+  }
+
+  // Chip Toggle
+  function toggleChip(chip) {
+    const isSelected = chip.classList.contains('bg-primary-container');
+    if (isSelected) {
+      chip.className = 'chip-item min-h-[44px] px-space-md rounded-full bg-surface text-on-surface hover:bg-surface-container font-caption text-caption transition-all flex items-center gap-2';
+      chip.innerHTML = '<span class="w-2 h-2 rounded-full bg-outline"></span>' + chip.querySelector('span:last-child').outerHTML;
+    } else {
+      chip.className = 'chip-item min-h-[44px] px-space-md rounded-full bg-primary-container text-on-primary font-caption text-caption transition-all flex items-center gap-2';
+      chip.innerHTML = '<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>' + chip.querySelector('span:last-child').outerHTML;
+    }
+  }
+
+  // Ranking Movement
+  function movePriority(btn, direction) {
+    const row = btn.closest('.ranked-row');
+    const container = document.getElementById('ranked-list-container');
+    if (direction === 'up' && row.previousElementSibling && row.previousElementSibling.classList.contains('ranked-row')) {
+      container.insertBefore(row, row.previousElementSibling);
+    } else if (direction === 'down' && row.nextElementSibling) {
+      container.insertBefore(row.nextElementSibling, row);
+    }
+    reindexRanks();
+  }
+
+  function swapWithThird(newName) {
+    const rows = document.querySelectorAll('.ranked-row');
+    if (rows.length >= 3) {
+      const thirdRow = rows[2];
+      const title = thirdRow.querySelector('p');
+      title.innerText = newName;
+      showToast(`Added "${newName}" to priority #3`);
+    }
+  }
+
+  function reindexRanks() {
+    const rows = document.querySelectorAll('.ranked-row');
+    rows.forEach((row, i) => {
+      const numBadge = row.querySelector('div > span:first-child');
+      if (numBadge) numBadge.innerText = (i + 1);
+    });
+  }
+
+  // Parameter Toggles
+  function toggleParam(btn, statusLabelId, offText, onText) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const dot = btn.querySelector('.toggle-dot');
+    const label = document.getElementById(statusLabelId);
+    
+    if (isChecked) {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-surface-container-highest');
+      dot.classList.remove('translate-x-5');
+      label.className = 'font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1';
+      label.innerHTML = `
+        <svg class="w-3.5 h-3.5 text-outline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+        ${offText}
+      `;
+    } else {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.add('bg-primary-container');
+      btn.classList.remove('bg-surface-container-highest');
+      dot.classList.add('translate-x-5');
+      label.className = 'font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1';
+      label.innerHTML = `
+        <svg class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        ${onText}
+      `;
+    }
+  }
+
+  function editSection(sec) {
+    showToast(`Navigating to edit: ${sec}`);
+    if (sec === 'Logistics') {
+      switchWizardStage(4);
+    } else {
+      switchWizardStage(3);
+    }
+  }
+
+  function finalizePlanCreation() {
+    const btn = document.getElementById('create-plan-btn');
+    btn.innerHTML = `
+      <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      <span>Synthesizing Ceremony Blueprint...</span>
+    `;
+    setTimeout(() => {
+      showToast('Plan Created! Transferring to Timeline & Budget Canvas...');
+      btn.innerHTML = `
+        <svg class="w-5 h-5 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        <span>Blueprint Ready</span>
+      `;
+    }, 1500);
+  }
+
+  function showToast(text) {
+    const toast = document.getElementById('toast-msg');
+    const toastText = document.getElementById('toast-text');
+    toastText.innerText = text;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3200);
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-sm px-space-xl shadow-[0_1px_8px_rgba(31,22,48,0.02)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="inline-block w-2 h-2 rounded-full bg-secondary"></span><span>Works offline • Your data stays on your device • Free</span></div><span>© Utsav Celebration Technologies</span></div></footer></div></body></html>

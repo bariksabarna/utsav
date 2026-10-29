@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#ebdcff","secondary":"#835500","primary-container":"#4a2c82","on-error-container":"#93000a","on-primary":"#ffffff","on-tertiary-container":"#d4a162","surface-container-low":"#f9f1ff","on-tertiary-fixed-variant":"#633f07","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#633f00","secondary-container":"#feae2c","primary":"#33116b","inverse-on-surface":"#f7edff","secondary-fixed":"#ffddb4","on-surface":"#201731","tertiary-fixed":"#ffddb7","surface-variant":"#ebdcff","surface-bright":"#fef7ff","primary-fixed":"#ebddff","surface-tint":"#6b4ea5","on-error":"#ffffff","inverse-primary":"#d3bbff","surface-container":"#f4eaff","tertiary":"#3c2300","on-surface-variant":"#494551","inverse-surface":"#352c47","on-secondary-container":"#6b4500","error-container":"#ffdad6","outline":"#7b7582","surface":"#fef7ff","surface-dim":"#e2d4f8","background":"#fef7ff","on-background":"#201731","tertiary-container":"#5a3700","on-secondary-fixed":"#291800","on-primary-fixed-variant":"#53358b","on-secondary":"#ffffff","on-tertiary-fixed":"#2a1700","surface-container-high":"#f0e3ff","on-primary-fixed":"#250059","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb955","outline-variant":"#cbc4d2","tertiary-fixed-dim":"#f3bd7b","primary-fixed-dim":"#d3bbff","on-primary-container":"#b99af7","error":"#ba1a1a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-2xl":"3rem","margin":"2rem","space-lg":"1.5rem","space-xs":"0.5rem","gutter":"1.5rem","space-sm":"0.75rem","space-md":"1rem","space-2xs":"0.25rem"},fontFamily:{"body-base":["Plus Jakarta Sans"],"caption":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-base-medium":["Plus Jakarta Sans"],"body-lead":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"caption":["14px",{"lineHeight":"21px","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"38.4px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"28.8px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38.4px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["44px",{"lineHeight":"52.8px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-lead":["18px",{"lineHeight":"27px","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"31.2px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-base text-body-base text-on-surface antialiased"><a class="sr-only focus:not-sr-only focus:fixed focus:top-space-xs focus:left-space-xs focus:z-[100] focus:px-space-md focus:py-space-xs focus:bg-primary focus:text-on-primary focus:font-body-base-medium focus:text-body-base-medium focus:rounded-lg focus:shadow-lg focus:outline-none" href="#main-content">Skip to main content</a><header class="fixed top-0 left-0 right-0 h-16 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,22,48,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Utsav Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3878K2BgHrAzj7i-2vFwBL_pdFI0eKk2AYrRxw3mP9rnCS24fzU01oD4AGN7BXBKo1MLHhL266im38HdSiXKw6VHlEBrttxkkVfQevcMveEeisJDWyiSFhYvbfD9LGzhpzDh_gU0hdZRrX1P3u-K8XyOfOX9X5S-coP36kVs-RelIN5iOh6dEdFQ2-6Na-xqFSJjP09wnSr_e4zQf9XeIH1QmnA1AmsQm0xWxaFTE4jjOq0GkGTfEcrQ"/><div class="flex items-center gap-space-2xs"><span class="font-headline-md text-headline-md tracking-tight text-primary">Utsav</span><span class="inline-flex items-center px-space-xs py-space-2xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">AI</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center bg-surface-container-low rounded-xl p-space-2xs"><button class="min-h-[44px] px-space-sm rounded-lg font-caption text-caption text-on-surface bg-surface-container-lowest shadow-[0_1px_2px_rgba(31,22,48,0.04)] transition-colors" type="button">EN</button><button class="min-h-[44px] px-space-sm rounded-lg font-caption text-caption text-on-surface-variant hover:text-on-surface transition-colors" type="button">हिन्दी</button><button class="min-h-[44px] px-space-sm rounded-lg font-caption text-caption text-on-surface-variant hover:text-on-surface transition-colors" type="button">বাংলা</button></div><button aria-label="Toggle color mode" class="w-11 h-11 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button aria-label="Help &amp; Knowledge Base" class="w-11 h-11 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-[240px] bg-surface-container-low flex flex-col justify-between py-space-md z-30 shadow-[0_1px_8px_rgba(31,22,48,0.04)]"><div class="flex-1 overflow-y-auto px-space-xs"><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-body-base-medium text-body-base-medium rounded-xl shadow-[0_1px_2px_rgba(31,22,48,0.04)]"><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Home</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="plan-wizard" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>Plan Wizard</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="budget" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Budget</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="timeline" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Timeline</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vendors" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Vendors</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ideas" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Ideas</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="assistant" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span>Assistant</span></a><a class="flex items-center gap-space-sm px-space-md min-h-[44px] rounded-xl text-on-surface-variant font-caption text-caption hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="px-space-sm pt-space-xs"><div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">cloud_done</span><span class="font-label-sm text-label-sm text-on-surface-variant">Local Cache Active</span></div></div></aside><div class="pl-[240px] flex flex-col min-h-screen"><main class="flex-1 w-full pt-16 px-space-xl pb-space-2xl bg-surface focus:outline-none" id="main-content"><div class="flex flex-col w-full">
+<div class="relative w-full max-w-7xl mx-auto px-space-xs sm:px-space-md lg:px-space-lg">
+<div class="w-full pt-space-xs pb-space-lg sm:pb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-space-2xs">
+<svg aria-hidden="true" class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+</svg>
+          Celebration Architecture
+        </span>
+<div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-space-2xs">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Your Event Details</h1>
+<p class="font-caption text-caption text-on-surface-variant">Step 2 of 5 • Tailoring customs &amp; scale</p>
+</div>
+</div>
+<nav aria-label="Wizard Steps Progress" class="mt-space-md sm:mt-space-lg bg-surface-container-lowest p-space-sm sm:p-space-md rounded-xl shadow-sm">
+<ol class="grid grid-cols-5 items-center gap-space-xs sm:gap-space-sm text-center">
+<li class="flex flex-col items-center gap-space-2xs group cursor-pointer">
+<div class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm transition-transform group-hover:scale-105">
+<svg aria-label="Completed" class="w-4 h-4 sm:w-5 sm:h-5 text-on-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M20 6L9 17l-5-5"></path>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface line-clamp-1">1. Event Type</span>
+</li>
+<li aria-current="step" class="flex flex-col items-center gap-space-2xs">
+<div class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary-container text-on-secondary-container font-headline-md text-body-base-medium shadow-sm ring-4 ring-secondary-container/30">
+<span>2</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold line-clamp-1">2. Details</span>
+</li>
+<li class="flex flex-col items-center gap-space-2xs opacity-60">
+<div class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span>3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">3. Budget &amp; Place</span>
+</li>
+<li class="flex flex-col items-center gap-space-2xs opacity-60">
+<div class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span>4</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">4. Preferences</span>
+</li>
+<li class="flex flex-col items-center gap-space-2xs opacity-60">
+<div class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span>5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">5. Review</span>
+</li>
+</ol>
+</nav>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-start pb-space-2xl">
+<div class="lg:col-span-8 w-full">
+<div class="mb-space-lg p-space-md rounded-xl bg-error-container text-on-error-container shadow-sm flex items-start gap-space-sm" id="error-summary" role="alert">
+<svg aria-hidden="true" class="w-5 h-5 flex-shrink-0 text-error mt-0.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<line x1="12" x2="12" y1="8" y2="12"></line>
+<line x1="12" x2="12.01" y1="16" y2="16"></line>
+</svg>
+<div class="flex flex-col gap-space-2xs">
+<span class="font-body-base-medium text-body-base-medium text-on-error-container">There is an issue with your schedule</span>
+<p class="font-caption text-caption text-on-error-container/90">
+<a class="font-bold underline decoration-error hover:text-error transition-colors focus:outline-none focus:ring-2 focus:ring-error rounded" href="#event-date-field">
+                Event date: Please choose a date from today onwards
+              </a>
+</p>
+</div>
+</div>
+<form class="space-y-space-lg bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm" novalidate="" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between" for="event-name">
+<span>Event Name <span aria-hidden="true" class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Shown on invites &amp; timeline</span>
+</label>
+<div class="relative">
+<input aria-describedby="event-name-helper" class="w-full h-11 px-space-sm rounded-lg bg-surface text-on-surface font-body-base text-body-base shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="event-name" required="" type="text" value="Riya &amp; Arjun's Wedding"/>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant" id="event-name-helper">e.g. Riya &amp; Arjun's Wedding</p>
+</div>
+<div class="flex flex-col gap-space-2xs" id="event-date-field">
+<label class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between" for="event-date">
+<span>Event Date <span aria-hidden="true" class="text-error">*</span></span>
+<span class="inline-flex items-center gap-space-2xs font-label-sm text-label-sm text-secondary bg-surface-container-high px-space-xs py-0.5 rounded-full font-medium" id="countdown-badge">
+<svg aria-hidden="true" class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+<span id="days-count-text">128 days to go</span>
+</span>
+</label>
+<div class="relative">
+<input aria-describedby="date-error-desc date-live-helper" aria-invalid="true" class="w-full h-11 px-space-sm pr-11 rounded-lg bg-error-container/20 text-on-surface font-body-base text-body-base shadow-sm ring-2 ring-error focus:outline-none focus:ring-2 focus:ring-error transition-all" id="event-date" type="date" value="2024-03-12"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-space-sm pointer-events-none text-error">
+<svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<line x1="12" x2="12" y1="8" y2="12"></line>
+<line x1="12" x2="12.01" y1="16" y2="16"></line>
+</svg>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-error flex items-center gap-space-2xs font-medium" id="date-error-desc">
+<svg aria-hidden="true" class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<line x1="12" x2="12" y1="8" y2="12"></line>
+<line x1="12" x2="12.01" y1="16" y2="16"></line>
+</svg>
+              Please choose a date from today onwards
+            </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant" id="date-live-helper">Traditional muhurat alignment recommendations will activate once a future date is set.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between" id="tradition-label">
+<span>Event Type Details (Tradition &amp; Format)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Choose one</span>
+</span>
+<div aria-labelledby="tradition-label" class="flex flex-wrap gap-space-xs" id="culture-pills" role="radiogroup">
+<button aria-checked="true" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-primary-container text-on-primary shadow-sm hover:shadow transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="Bengali" role="radio" type="button">
+<svg aria-hidden="true" class="w-4 h-4 text-on-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+                Bengali
+              </button>
+<button aria-checked="false" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="North Indian" role="radio" type="button">
+                North Indian
+              </button>
+<button aria-checked="false" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="South Indian" role="radio" type="button">
+                South Indian
+              </button>
+<button aria-checked="false" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="Christian" role="radio" type="button">
+                Christian
+              </button>
+<button aria-checked="false" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="Muslim" role="radio" type="button">
+                Muslim
+              </button>
+<button aria-checked="false" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="Court" role="radio" type="button">
+                Court
+              </button>
+<button aria-checked="false" class="min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" data-pill="Destination" role="radio" type="button">
+                Destination
+              </button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between" for="adult-guests-input">
+<span>Number of Guests</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Adults (12+)</span>
+</label>
+<div class="flex items-center rounded-lg bg-surface shadow-sm h-11 overflow-hidden p-1">
+<button aria-label="Decrease adult guest count" class="w-11 h-full rounded-md flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container" id="guest-dec" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+</svg>
+</button>
+<input class="w-full h-full text-center bg-transparent text-on-surface font-headline-md text-body-base-medium font-bold focus:outline-none" id="adult-guests-input" min="1" step="10" type="number" value="250"/>
+<button aria-label="Increase adult guest count" class="w-11 h-full rounded-md flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container" id="guest-inc" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="12" x2="12" y1="5" y2="19"></line>
+<line x1="5" x2="19" y1="12" y2="12"></line>
+</svg>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between" for="children-guests-input">
+<span>Children <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">(Optional)</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Under 12</span>
+</label>
+<div class="flex items-center rounded-lg bg-surface shadow-sm h-11 overflow-hidden p-1">
+<button aria-label="Decrease child guest count" class="w-11 h-full rounded-md flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container" id="child-dec" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+</svg>
+</button>
+<input class="w-full h-full text-center bg-transparent text-on-surface font-headline-md text-body-base-medium font-bold focus:outline-none" id="children-guests-input" min="0" step="5" type="number" value="20"/>
+<button aria-label="Increase child guest count" class="w-11 h-full rounded-md flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container" id="child-inc" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="12" x2="12" y1="5" y2="19"></line>
+<line x1="5" x2="19" y1="12" y2="12"></line>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs pt-space-xs">
+<label class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between" for="event-start-time">
+<span>Start Time</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Ceremony onset / Baraat arrival</span>
+</label>
+<div class="relative max-w-xs">
+<input aria-describedby="time-hint" class="w-full h-11 px-space-sm rounded-lg bg-surface text-on-surface font-body-base text-body-base shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="event-start-time" type="time" value="17:00"/>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant" id="time-hint">Estimated start time helps calculate catering prep &amp; priest arrival times.</p>
+</div>
+<div class="flex items-center justify-between gap-space-md pt-space-xl">
+<button class="min-h-[44px] px-space-lg rounded-xl bg-surface-container text-primary font-body-base-medium text-body-base-medium shadow-sm hover:bg-surface-container-high transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container" onclick="history.back()" type="button">
+<svg aria-hidden="true" class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+              Back
+            </button>
+<button class="min-h-[44px] px-space-xl rounded-xl bg-primary-container text-on-primary font-body-base-medium text-body-base-medium shadow-sm hover:bg-primary transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary-container" id="next-step-button" type="button">
+<span>Save &amp; Continue</span>
+<svg aria-hidden="true" class="w-4 h-4 text-on-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+</form>
+</div>
+<div class="lg:col-span-4 w-full sticky top-20">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-2xs">
+<span aria-hidden="true" class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<h2 class="font-headline-md text-body-lead text-primary font-bold">Your Plan So Far</h2>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-high px-space-xs py-0.5 rounded-full font-semibold">
+<svg aria-hidden="true" class="w-3 h-3 text-secondary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"></path>
+</svg>
+              Updating Live
+            </span>
+</div>
+<div class="relative rounded-lg overflow-hidden h-28 bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Intricate golden marigold strings and subtle terracotta wedding lanterns decorating an ornate Indian courtyard mandap setting with soft morning light and indigo accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLguEDOXU1TgWlUX_hy2KcNg0T35XHp1vvAIX5xeQ_AbTPO51GHsQLqQV-QVYDTlUWHre7_lczuDHuTYrZw5EZMCoOBtukI5EVfcqUKcyT-d1fJkpIimI-6YH85yah0b4ZubKNYaV1_VgJs3jJX7CU6oSAvxpDQ2bGkf59obrf6S12z-ju8243MzCe2X66d_hLqg_3E_Q3nz_syYuFCh1njYO_XpZp9NCK65UjWgRoeu575bFy0o5Ktw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex items-end p-space-sm">
+<span class="text-on-primary font-caption text-caption font-semibold tracking-wide" id="summary-badge-name">Riya &amp; Arjun's Wedding</span>
+</div>
+</div>
+<dl class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between py-space-xs">
+<dt class="font-caption text-caption text-on-surface-variant flex items-center gap-space-2xs">
+<svg aria-hidden="true" class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+</svg>
+                Celebration Style
+              </dt>
+<dd class="font-caption text-caption text-on-surface font-semibold" id="summary-tradition">Wedding – Bengali</dd>
+</div>
+<div class="flex items-center justify-between py-space-xs">
+<dt class="font-caption text-caption text-on-surface-variant flex items-center gap-space-2xs">
+<svg aria-hidden="true" class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect>
+<line x1="16" x2="16" y1="2" y2="6"></line>
+<line x1="8" x2="8" y1="2" y2="6"></line>
+<line x1="3" x2="21" y1="10" y2="10"></line>
+</svg>
+                Selected Date
+              </dt>
+<dd class="font-caption text-caption text-error font-medium flex items-center gap-1" id="summary-date">
+<span>Needs Adjustment</span>
+<svg aria-hidden="true" class="w-3.5 h-3.5 text-error" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<line x1="12" x2="12" y1="8" y2="12"></line>
+<line x1="12" x2="12.01" y1="16" y2="16"></line>
+</svg>
+</dd>
+</div>
+<div class="flex items-center justify-between py-space-xs">
+<dt class="font-caption text-caption text-on-surface-variant flex items-center gap-space-2xs">
+<svg aria-hidden="true" class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+<circle cx="9" cy="7" r="4"></circle>
+<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+</svg>
+                Total Attendance
+              </dt>
+<dd class="font-caption text-caption text-on-surface font-semibold" id="summary-guests">250 Guests (+20 kids)</dd>
+</div>
+<div class="flex items-center justify-between py-space-xs">
+<dt class="font-caption text-caption text-on-surface-variant flex items-center gap-space-2xs">
+<svg aria-hidden="true" class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+                Commencement
+              </dt>
+<dd class="font-caption text-caption text-on-surface font-semibold" id="summary-time">05:00 PM</dd>
+</div>
+</dl>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-start gap-space-xs">
+<svg aria-hidden="true" class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+</svg>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Smart Tradition Engine</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Choosing <strong>Bengali Wedding</strong> configures standard rituals: Gaye Holud, Bor Jatri, and Saat Paake Ghaura automatically in Step 4.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function initPlanWizardDetails() {
+      const nameInput = document.getElementById('event-name');
+      const dateInput = document.getElementById('event-date');
+      const guestInput = document.getElementById('adult-guests-input');
+      const childInput = document.getElementById('children-guests-input');
+      const timeInput = document.getElementById('event-start-time');
+      
+      const summaryName = document.getElementById('summary-badge-name');
+      const summaryTradition = document.getElementById('summary-tradition');
+      const summaryDate = document.getElementById('summary-date');
+      const summaryGuests = document.getElementById('summary-guests');
+      const summaryTime = document.getElementById('summary-time');
+      const daysCountText = document.getElementById('days-count-text');
+
+      if (nameInput && summaryName) {
+        nameInput.addEventListener('input', (e) => {
+          summaryName.textContent = e.target.value.trim() || 'Untitled Celebration';
+        });
+      }
+
+      function updateSummaryAttendance() {
+        const adults = parseInt(guestInput.value, 10) || 0;
+        const kids = parseInt(childInput.value, 10) || 0;
+        summaryGuests.textContent = `${adults} Guests` + (kids > 0 ? ` (+${kids} kids)` : '');
+      }
+
+      document.getElementById('guest-inc')?.addEventListener('click', () => {
+        guestInput.value = (parseInt(guestInput.value, 10) || 0) + 10;
+        updateSummaryAttendance();
+      });
+
+      document.getElementById('guest-dec')?.addEventListener('click', () => {
+        const val = (parseInt(guestInput.value, 10) || 0) - 10;
+        guestInput.value = val > 1 ? val : 1;
+        updateSummaryAttendance();
+      });
+
+      document.getElementById('child-inc')?.addEventListener('click', () => {
+        childInput.value = (parseInt(childInput.value, 10) || 0) + 5;
+        updateSummaryAttendance();
+      });
+
+      document.getElementById('child-dec')?.addEventListener('click', () => {
+        const val = (parseInt(childInput.value, 10) || 0) - 5;
+        childInput.value = val >= 0 ? val : 0;
+        updateSummaryAttendance();
+      });
+
+      guestInput?.addEventListener('input', updateSummaryAttendance);
+      childInput?.addEventListener('input', updateSummaryAttendance);
+
+      if (timeInput && summaryTime) {
+        timeInput.addEventListener('input', (e) => {
+          const val = e.target.value;
+          if (!val) return;
+          const [hours, minutes] = val.split(':');
+          const h = parseInt(hours, 10);
+          const period = h >= 12 ? 'PM' : 'AM';
+          const formattedH = (h % 12 || 12).toString().padStart(2, '0');
+          summaryTime.textContent = `${formattedH}:${minutes} ${period}`;
+        });
+      }
+
+      const pillButtons = document.querySelectorAll('#culture-pills button');
+      pillButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          pillButtons.forEach(b => {
+            b.setAttribute('aria-checked', 'false');
+            b.className = 'min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-surface-container-low text-on-surface hover:bg-surface-container shadow-sm transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container';
+            const icon = b.querySelector('svg');
+            if (icon) icon.remove();
+          });
+
+          btn.setAttribute('aria-checked', 'true');
+          btn.className = 'min-h-[44px] px-space-md py-space-xs rounded-full font-caption text-caption bg-primary-container text-on-primary shadow-sm hover:shadow transition-all flex items-center gap-space-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-container';
+          
+          const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          svg.setAttribute('class', 'w-4 h-4 text-on-primary');
+          svg.setAttribute('viewBox', '0 0 24 24');
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke', 'currentColor');
+          svg.setAttribute('stroke-width', '2');
+          svg.setAttribute('stroke-linecap', 'round');
+          svg.setAttribute('stroke-linejoin', 'round');
+          svg.innerHTML = '<polyline points="20 6 9 17 4 12"></polyline>';
+          btn.prepend(svg);
+
+          const traditionName = btn.getAttribute('data-pill');
+          if (summaryTradition) {
+            summaryTradition.textContent = `Wedding – ${traditionName}`;
+          }
+        });
+      });
+
+      if (dateInput) {
+        dateInput.addEventListener('change', (e) => {
+          const chosen = new Date(e.target.value);
+          const today = new Date();
+          today.setHours(0, 0, 0, 0);
+
+          if (chosen >= today) {
+            const diffTime = Math.abs(chosen - today);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            if (daysCountText) daysCountText.textContent = `${diffDays} days to go`;
+            if (summaryDate) {
+              summaryDate.className = 'font-caption text-caption text-on-surface font-semibold flex items-center gap-1';
+              summaryDate.innerHTML = `<span>${chosen.toLocaleDateString('en-IN', { month: 'short', day: 'numeric', year: 'numeric' })}</span>`;
+            }
+            dateInput.className = 'w-full h-11 px-space-sm pr-11 rounded-lg bg-surface text-on-surface font-body-base text-body-base shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container transition-all';
+          } else {
+            if (summaryDate) {
+              summaryDate.className = 'font-caption text-caption text-error font-medium flex items-center gap-1';
+              summaryDate.innerHTML = '<span>Needs Adjustment</span>';
+            }
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-sm px-space-xl shadow-[0_1px_8px_rgba(31,22,48,0.02)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="inline-block w-2 h-2 rounded-full bg-secondary"></span><span>Works offline • Your data stays on your device • Free</span></div><span>© Utsav Celebration Technologies</span></div></footer></div></body></html>

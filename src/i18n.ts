@@ -1,0 +1,135 @@
+/**
+ * English interface strings and translation helpers.
+ *
+ * Responsibilities: keep the default bundle English-only and load Hindi or
+ * Bengali dictionaries on demand.
+ * FR IDs: FR-I18N-001, FR-I18N-002.
+ */
+
+export const english = {
+  skip: 'Skip to main content',
+  planner: 'Planner',
+  features: 'Features',
+  dashboard: 'Dashboard',
+  eyebrow: 'Event planning',
+  heroTitle: 'Plan your day',
+  heroLede: 'Budget, timing, vendors. Rules first, AI second, always explainable.',
+  startPlanning: 'Start planning',
+  samplePlan: 'Try a sample plan',
+  chooseEvent: 'Choose your event',
+  eventType: 'Event type',
+  subType: 'Event sub-type',
+  budget: 'Budget',
+  guests: 'Guests',
+  children: 'Children',
+  eventDate: 'Event date',
+  startTime: 'Start time',
+  venue: 'Venue style',
+  cityTier: 'City tier',
+  dietary: 'Dietary preference',
+  priority: 'Top priority',
+  language: 'Plan language',
+  additionalContext: 'Additional context',
+  elderly: 'Elderly guests attending',
+  liveMusic: 'Live music or DJ',
+  alcohol: 'Serving alcohol',
+  multiDay: 'Multi-day event',
+  livestream: 'Livestream needed',
+  budgetStatus: 'Budget status',
+  perGuest: 'per guest',
+  contingency: 'contingency',
+  readiness: 'Readiness',
+  readinessBreakdown: 'Readiness breakdown',
+  nextTasks: 'Next 5 tasks',
+  quickSteps: 'Quick next steps',
+  risks: 'Risk flags',
+  timeline: 'Timeline',
+  runOfShow: 'Day-of run-of-show',
+  vendors: 'Vendor checklist',
+  exportShare: 'Export & share',
+  exportCsv: 'Download CSV',
+  exportJson: 'Save plan file',
+  exportIcs: 'Add to calendar (.ics)',
+  print: 'Print plan',
+  importPlan: 'Open a saved plan',
+  ideas: 'Ideas',
+  why: 'Why this plan?',
+  theme: 'Theme',
+  themeLight: 'Light',
+  themeDark: 'Dark',
+  overdue: 'Overdue',
+  atRisk: 'At risk',
+  dueSoon: 'Due soon',
+  onTrack: 'On track',
+  rush: 'Rush mode',
+  done: 'Done',
+  markDone: 'Mark done',
+  markTodo: 'Mark not done',
+  aiIdeas: 'Personalised ideas',
+  generateIdeas: 'Generate ideas',
+  regenerate: 'Refresh ideas',
+  curateOffline: 'Use curated ideas',
+  focusLabel: 'Focus for ideas',
+  focusPlaceholder: 'e.g. low-waste decor, elder-friendly seating',
+  ideasEmpty: 'Generate ideas to add optional inspiration. The plan works without AI.',
+  sourceGemini: 'AI generated',
+  sourceFallback: 'Curated offline',
+  fallbackNote: 'AI is unavailable, so these curated ideas are shown instead. Everything still works offline.',
+  assistant: 'Ask Utsav',
+  assistantIntro: 'Ask about budget, tasks, dietary needs, or what to do next.',
+  assistantPlaceholder: 'Ask about your plan…',
+  send: 'Send',
+  assistantThinking: 'Thinking…',
+  quickBudget: 'Where am I overspending?',
+  quickNext: 'What should I do next?',
+  quickDiet: 'Check dietary handling',
+  review: 'Review my plan',
+  reviewResult: 'AI review',
+  applyPatch: 'Apply suggestion',
+  dismissPatch: 'Dismiss',
+  patchApplied: 'Suggestion applied. You can undo it below.',
+  undo: 'Undo',
+  aiAddedTasks: 'AI-added tasks',
+  shortlisted: 'Shortlisted',
+  shortlist: 'Shortlist',
+  lockIdea: 'Keep this idea',
+  aiError: 'AI could not answer. Try again or use the offline plan.',
+  settings: 'Settings',
+  saved: 'Saved on this device',
+  resetPlan: 'Reset plan',
+  budgetShort: 'Budget is short by',
+  essentialFloors: 'Essential catering and venue floors exceed the budget.',
+  budgetCovers: 'Budget covers essential floors with a reserve.',
+  findMaps: 'Find on Google Maps',
+  checklist: 'Checklist for',
+  mustAsk: 'Must ask',
+  contract: 'Contract',
+  redFlags: 'Red flags',
+  statusFor: 'Status for',
+  guestCount: 'guests',
+  daysToGo: 'days to go',
+  event: 'Event',
+  rules: 'Rules',
+  plan: 'Plan',
+  eventFeature: 'Guests, venue, food, culture, and season.',
+  rulesFeature: 'rules fired with plain-language reasons.',
+  planFeature: 'Integer budgets, dependencies, vendors, risks, and readiness.',
+  runShowCaption: 'Run-of-show for',
+  priorityBalanced: 'Balanced',
+} as const;
+
+/** A translation key supported by every dictionary. */
+export type TranslationKey = keyof typeof english;
+
+/** A complete dictionary. */
+export type Dictionary = Record<TranslationKey, string>;
+
+/**
+ * Builds a dictionary lookup with an English fallback.
+ *
+ * @param dictionary - Loaded dictionary
+ * @returns Translation function
+ */
+export function makeTranslator(dictionary: Dictionary): (key: TranslationKey) => string {
+  return (key) => dictionary[key] ?? english[key];
+}

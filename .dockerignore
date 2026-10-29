@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+.git
+.github
+coverage
+dist
+dist-server
+.env
+.env.*
+docs
+tests
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts

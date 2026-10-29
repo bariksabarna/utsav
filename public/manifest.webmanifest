@@ -1,0 +1,47 @@
+{
+  "name": "Utsav — AI Celebration & Event Planner",
+  "short_name": "Utsav",
+  "description": "Plan Indian weddings, birthdays, and community events with explainable budgets, timelines, and vendor checklists.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFBF5",
+  "theme_color": "#4A2C82",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["productivity", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open planner",
+      "short_name": "Planner",
+      "url": "/#planner"
+    },
+    {
+      "name": "Open dashboard",
+      "short_name": "Dashboard",
+      "url": "/#dashboard"
+    }
+  ]
+}
