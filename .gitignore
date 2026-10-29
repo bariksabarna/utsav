@@ -11,3 +11,5 @@ npm-debug.log*
 vite.config.js
 vite.config.d.ts
 .firebaserc
+.env
+.env.*
